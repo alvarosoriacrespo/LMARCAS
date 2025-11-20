@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<title>Actividad NO evaluable formulario</title>
+</HEAD>
+<body>
+<table border="2">
+ <tr>
+    <td>Datos personales</td>
+    <td>Idiomas</td>
+ </tr>
+ <tr>
+    <td> 
+     <form action=" http://ncoge.com/phps/formulario.php" method="post">
+        Nombre:<input type="text"
+        name= "nameUser">
+        <br>Apellidos:<input type="text"
+        name= "apellidosUser">
+        <br>Correo:<input type="text"
+        name= "correoUser">
+        <br> Hobbies:</br>
+        <textarea name="Hobbies"></textarea>
+     </form>
+    </td>
+    <td>
+    <form action=" http://ncoge.com/phps/formulario.php" method="post"></form>
+     <br>Puntua tu nivel de idiomas del 1 al 5:
+     <br>Inglés: 
+        <input type="radio" name="ingles" value="1" checked="checked"/>
+        1
+        <input type="radio" name="ingles" value="2" checked="checked"/>
+        2
+        <input type="radio" name="ingles" value="3" checked="checked"/>
+        3
+        <input type="radio" name="ingles" value="4" checked="checked"/>
+        4
+        <input type="radio" name="ingles" value="5" checked="checked"/>
+        5
+    <br>Francés: 
+        <input type="radio" name="frances" value="1" checked="checked"/>
+        1
+        <input type="radio" name="frances" value="2" checked="checked"/>
+        2
+        <input type="radio" name="frances" value="3" checked="checked"/>
+        3
+        <input type="radio" name="frances" value="4" checked="checked"/>
+        4
+        <input type="radio" name="frances" value="5" checked="checked"/>
+        5
+    <br>Alemán: 
+        <input type="radio" name="aleman" value="1" checked="checked"/>
+        1
+        <input type="radio" name="aleman" value="2" checked="checked"/>
+        2
+        <input type="radio" name="aleman" value="3" checked="checked"/>
+        3
+        <input type="radio" name="aleman" value="4" checked="checked"/>
+        4
+        <input type="radio" name="aleman" value="5" checked="checked"/>
+        5
+    
+     </td>
+ </tr>
+ <tr>
+    <td>    
+    </td>
+    <td align="right">
+
+        Domino los siguientes programas:
+        <input type="radio" name="programa" value="Writer" checked="checked"/>
+        Writer
+        <input type="radio" name="programa" value="base" checked="checked"/>
+        Base
+        <input type="radio" name="programa" value="Calc" checked="checked"/>
+        Calc
+        <input type="radio" name="programa" value="impress" checked="checked"/>
+        Impress
+     
+     </td>
+ </tr>
+ <tr>
+    <td>
+    </td>
+    <td>
+    
+        <label for="so">Trabajo con los siguientes programas operativos:</label> <br/>
+        <select id="so" name="so">
+        <option value="" selected="selected">- Elige -</option>
+        <option value="windows">Windows</option>
+        <option value="mac">Mac</option>
+        <option value="linux">Linux</option>
+        <option value="otro">Otro</option>
+        </select>
+    </td>
+ </tr>
+ <td align="center" colspan="2">
+    <input type="submit" value="ENVIAR"/>
+ </td>
+</form>
+</table>
+</body></HTML>

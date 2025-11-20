@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<title>Formulario prueba</title>
+</HEAD>
+<body>
+    <h1>Formulario de prueba</h1>
+
+    <form action="https://ncoge.com/phps/formulario.php" method="post">
+        nombre:<input type="text"
+        name= "nameUser">
+        <br>
+        password:<input type:"text"
+        name="password">
+        <br>
+        Puesto de trabajo:</br>
+        <input name="puesto_directivo" type="checkbox" value="dirección"/>
+        Dirección
+        <input name="puesto_técnico" type="checkbox" value="tecnico"/>
+        Técnico
+        <input name="puesto_empleado" type="checkbox" value="empleado"/>
+        Empleado
+        <br>
+        Sexo:</br>
+        <input type="radio" name="sexo" value="hombre" checked="checked"/>
+        Hombre
+        <input type="radio" name="sexo" value="mujer" checked="checked"/>
+        Mujer
+        <input type="radio" name="sexo" value="otro" checked="checked"/>
+        otro
+        <br>
+        Desayuno:</br>
+        <input type="radio" name="desayuno" value="cafe" checked="checked"/>
+        cafe
+        <input type="radio" name="desayuno" value="colacao" checked="checked"/>
+        colacao
+        <input type="radio" name="desayuno" value="infusión" checked="checked"/>
+        infusión
+        <br>
+        Descripción:</br>
+        <textarea name="descripcion"></textarea>
+        <br>
+        fichero adjunto:</br>
+        <input type="hidden" name="url_secreta" value="secreto"/>
+        <br>
+        <input type="submit"
+        value="Enviar"><input type="reset" name="Borrar datos del formulario"/>
+        <input type="button" name="guardar" value="Guardar cambios"/>
+    </form>
+</body>
+</HTML>
