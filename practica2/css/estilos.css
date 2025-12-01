@@ -1,0 +1,108 @@
+* {
+}
+
+body {
+    background-color: white; 
+    text-align:center;
+}
+
+h1 {
+   text-align: center;
+   color: black;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border: 5px solid black;
+    margin-right: 60px;
+}
+
+ul {
+}
+
+li {
+}
+
+p {
+}
+
+#header {
+    background-color: #8888bd;
+    padding: 15px 0; 
+    text-align: center; 
+    color: black; 
+    border-bottom: 5px solid black; 
+}
+
+#content {
+}
+
+#text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#text p {
+    border:  black dashed;
+    box-shadow: 5px 5px 5px black;
+    text-indent: 40px;
+    padding: 10px;
+    background-color: #c3c3e5;
+}
+
+#text p:first-child {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-image:url(../images/fondoParrafo.png);
+}
+
+#text p:last-child {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#menu {
+}
+
+#menu a {
+}
+
+#menu li {
+    display: inline;
+    border-left: solid 15px red;
+}
+
+#menu li a:hover {
+    border-bottom: solid 5px red;
+}
+
+#footer{
+    background-color: #5d5dab; 
+    border-top: 2px solid #3c3c78;
+}
+
+#footer a {
+    color: yellow;
+}
+
+#footer a:hover {
+}
+
+#image {
+    text-align: right; 
+}
+
+@media all and (max-width: 500px) {
+    
+    img{
+        border:solid red 5px;
+        width: 90%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+     #image {
+        text-align: center;
+    }
+}
