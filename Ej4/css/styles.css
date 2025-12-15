@@ -12,8 +12,10 @@
 
 body {
     background-color: #333333;
-    width: 90%;
     text-align: center;
+    width: 90%;
+    margin-left: 5% ;
+    margin-right: 5%;
 }
 
 .container {
@@ -27,8 +29,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     margin: 10px auto;
     padding: 20px;
-    text-align: center;    
+    text-align: center;  
 }
+
 .footer {
     padding: 0px;
     color: white;
@@ -36,6 +39,7 @@ body {
 }
 
 .imageHome{
+    
     border:black 4px solid;
     border-radius: 3%;
     height: auto;
@@ -43,6 +47,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     object-fit: cover; 
     text-align: center; 
+    width: 90%;
 }
 
 .youtuber .images {
