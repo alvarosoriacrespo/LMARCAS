@@ -39,7 +39,7 @@ body {
 }
 
 .imageHome{
-    
+
     border:black 4px solid;
     border-radius: 3%;
     height: auto;
@@ -101,17 +101,17 @@ li {
     transition: background-color 0.3s ease;
 }
 .button:hover {
-    /* 16- cambia el color al boton*/
+    background-color: #0056b3;
 }
 
 @media all and (max-width: 700px) {
     .youtuber, .footer {
-        /* 17- cambia el color al BORDE*/
+        border-color: red;
     }
     .button {
-        /* 18- cambia el color al boton*/        
+        background-color: red;      
     }
     .button:hover {
-        /* 19- cambia el color al boton*/
+        background-color: darkred;
     }    
 }
