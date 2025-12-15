@@ -24,7 +24,7 @@ body {
     background-color: #424242;
     border: 1px solid lightgray;
     border-radius: 10px;
-    box-shadow: #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     margin: 10px auto;
     padding: 20px;
     text-align: center;    
@@ -38,24 +38,18 @@ body {
 .imageHome{
     border:black 4px solid;
     border-radius: 3%;
-    /* 7- tamanyo */
-    /* Se utiliza en imágenes y videos 
-    para asegurarse de que siempre llenen 
-    completamente el contenedor, manteniendo
-    su relación de aspecto*/
+    height: auto;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     object-fit: cover; 
     text-align: center; 
 }
 
 .youtuber .images {
 
-    /* 8- redondear la imagen*/
+    border-radius: 100%;
     width: 150px;
     height: 150px;    
-    /* Se utiliza en imágenes y videos 
-    para asegurarse de que siempre llenen 
-    completamente el contenedor, manteniendo 
-    su relación de aspecto*/
     object-fit: cover; 
     text-align: center; 
 }
@@ -72,24 +66,22 @@ body {
 }
 
 #menu {
-    /* 9- quita los puntos */
+    list-style-type: none;
 }
 
 li {
-    /* 10- haz que los li no sean de tipo bloque */
-    /* 11- borde izquierdo rojo */
+    display: inline;
     border-left: 4px red solid;
-    /* 12- separa el borde de la izquierda */
     padding-left: 5px;
 }
 
 #menu a {
-    /* 13- enlaces blancos */
-    /* 14- sin subrayado */
+    color: white;
+    text-decoration: none;
 }
 
 #menu a:hover {
-    /* 15- cambia el color al subrayado*/
+    color: red;
 }
 
 
@@ -101,8 +93,6 @@ li {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    /* animacion en css, para cambiar el color del boton, no visto en clase 
-    pero yo te lo regalo ;) */
     transition: background-color 0.3s ease;
 }
 .button:hover {
