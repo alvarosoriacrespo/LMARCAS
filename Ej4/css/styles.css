@@ -11,9 +11,9 @@
 */
 
 body {
-    /* 1- color de fondo */
-    /* 2- ancho 90% */
-    /* 3- centrar */
+    background-color: #333333;
+    width: 90%;
+    text-align: center;
 }
 
 .container {
@@ -21,10 +21,10 @@ body {
 }
 
 .youtuber, .footer, .header {
-    /* 4- color de fondo */
+    background-color: #424242;
     border: 1px solid lightgray;
-    /* 5- redondear el borde */
-    /* 6- sombra */
+    border-radius: 10px;
+    box-shadow: #007BFF;
     margin: 10px auto;
     padding: 20px;
     text-align: center;    
@@ -32,6 +32,7 @@ body {
 .footer {
     padding: 0px;
     color: white;
+    text-align: center; 
 }
 
 .imageHome{
@@ -43,6 +44,7 @@ body {
     completamente el contenedor, manteniendo
     su relación de aspecto*/
     object-fit: cover; 
+    text-align: center; 
 }
 
 .youtuber .images {
@@ -55,6 +57,7 @@ body {
     completamente el contenedor, manteniendo 
     su relación de aspecto*/
     object-fit: cover; 
+    text-align: center; 
 }
 
 .youtuber h2 {    
