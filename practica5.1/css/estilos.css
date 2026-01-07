@@ -47,6 +47,7 @@ p {
   */
   /* necesitas 3 instrucciones*/
   /*1: */
+  position: fixed; top: 0; width: 100%;
   /*2: */
   /*3: */
   text-align: center;  
@@ -73,7 +74,9 @@ p {
   */
   /* necesitas 2 instrucciones*/
   /*1: */
+  text-decoration: underline blue;
   /*2: */
+  background-color: orange;
 }
 
 #footer{
