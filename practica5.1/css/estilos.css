@@ -146,6 +146,7 @@ p {
 
   /* necesitas 1 instruccion*/
   /*1: */
+  clear: both;
 }
 
 #imageToHide {
@@ -154,7 +155,8 @@ p {
  */
 
   /* necesitas 1 instruccion*/
-  /*1: */  
+  /*1: */ 
+  float: left; 
   text-align: center;
   margin-bottom: 40px;
 }
@@ -170,9 +172,13 @@ p {
 
   /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
   /*1: */  
+  position: fixed;
   /*2: */    
-  /*3: */    
-  /*4: */    
+  top: 40%;
+  /*3: */  
+  left: 30%;  
+  /*4: */   
+  right: 30%;
   border:2px solid red;
   background-color: white;
   margin-bottom: 5px;
