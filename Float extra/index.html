@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Float Extra</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Donde estamos</a>
+        <a href="#">Nuestros trabajos</a>
+        <a href="#">Contáctanos</a>
+    </div>
+<header>
+    <div id="header">
+        <h1>Tattoo ootaT</h1>
+    </div>
+</header>
+    <div class="cookies-banner" id="cookieBanner">
+        <h3>Esta web necesita usar cookies</h3>
+        <p>Utilizamos cookies para mejorar su experiencia...</p>
+        <button onclick="document.getElementById('cookieBanner').style.display='none'">Cerrar</button>
+    </div>
+
+    <main class="container">
+        <section class="content">
+            <article class="info-box">
+                <img src="img1.jpg" alt="Tatuaje" class="float-right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+
+            <article class="info-box">
+                <img src="img2.jpg" alt="Tatuaje" class="float-left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <a href="#"><img src="fb-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="ig-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="yt-icon.png" alt="YouTube"></a>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Empresa de Tatuajes - Información legal</p>
+    </footer>
+
+</body>
 </html>
