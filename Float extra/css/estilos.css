@@ -1,87 +1,122 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(../images/fondo.jpg);
+    background-image: url('../images/fondo.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
-#arriba {
-    position: fixed;
+
+
+#menu-superior {
+    position: fixed; 
     top: 0;
     width: 100%;
-    background-color: rgb(133, 133, 255);
-    padding: 10px 0;
+    background-color: #006644;
     text-align: center;
+    padding: 10px 0;
     z-index: 1000;
 }
-#arriba a {
+
+#menu-superior a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-#header{
+
+#menu-superior a:hover {
+    text-decoration: underline; 
+}
+
+#cabecera{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     color: white;
 }
-
-#a:hover {
-    text-decoration: underline;
-}
-
-#cookies-banner {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid red;
+#capa-cookies {
+    background: white;
+    border: 2px solid red;
     padding: 20px;
     width: 60%;
     margin: 100px auto 20px auto;
     text-align: center;
 }
-#container {
+
+
+#contenedor-principal {
     width: 90%;
     margin: auto;
+    overflow: hidden; 
 }
 
-#content {
-    float: left;
-    width: 80%;
+#zona-contenido {
+    float: left; 
+    width: 75%;
 }
 
-#info-box {
-    background:rgb(133, 133, 255);
-    color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    overflow: hidden;
-}
 
-#float-right { float: right; margin-left: 20px; width: 200px; }
-#float-left { float: left; margin-right: 20px; width: 200px; }
-#sidebar {
+#menu-lateral {
     float: right;
+    margin-top: 50px;
     width: 15%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
+    border: 2px solid red;
+    color: black;
 }
 
-#sidebar img { width: 40px; margin-bottom: 10px; }
-#footer {
-    position: fixed;
+#menu-lateral img {
+    display: block;
+    width: 40px;
+    margin: 10px auto;
+}
+
+.bloque-info {
+    position: relative;
+    background-color: rgba(128, 128, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    border-radius: 5px;
+    color: white;
+    height: 200px;   
+    overflow-y: scroll;
+}
+
+#img-derecha {
+    float: right; 
+    width: 200px; 
+    height: auto;
+    margin-left: 15px;
+} 
+
+#img-izquierda {
+    float: left; 
+    width: 200px;
+    height: auto;
+    margin-right: 15px;
+}
+
+#pie-pagina {
+    position: fixed; 
     bottom: 0;
     width: 100%;
-    clear: both;
+    clear: both; 
     background: #222;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
+
 @media (max-width: 768px) {
-    #content, #sidebar {
+    #zona-contenido, #menu-lateral {
         width: 100%;
-        float: none;
+        float: none; 
     }
-    #sidebar {
-        flex-direction: row;
-        justify-content: center;
+    
+    #menu-lateral img {
+        display: inline-block;
+        margin: 10px;
     }
 }

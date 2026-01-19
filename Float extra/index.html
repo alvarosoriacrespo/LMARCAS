@@ -2,52 +2,50 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica Float Extra</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
 </head>
-<body>
+<body id="cuerpo-pagina">
 
-    <div id="arriba">
+    <nav id="menu-superior">
         <a href="#">Inicio</a>
         <a href="#">Donde estamos</a>
         <a href="#">Nuestros trabajos</a>
         <a href="#">Contáctanos</a>
-    </div>
-<header>
-    <div id="header">
-        <a>.</a>
-        <a><h1>Tattoo oota</h1></a>
-    </div>
-</header>
-    <div id="cookies-banner" id="cookieBanner">
-        <h3>Esta web necesita usar cookies</h3>
-        <p>Utilizamos cookies para mejorar su experiencia...</p>
-        <button onclick="document.getElementById('cookieBanner').style.display='none'">Cerrar</button>
+    </nav>
+
+    <header id="cabecera">
+        <h1 id="titulo-empresa">
+            <a>Tattoo ootaT</a>
+        </h1>
+    </header>
+
+    <div id="capa-cookies"> <h3>Esta web necesita usar cookies.</h3>
+        <p>Samos cos para que near Expertnice en nuestro sitie...</p>
+        <button onclick="document.getElementById('capa-cookies').style.display='none'">Cerrar</button>
     </div>
 
-    <main id="container">
-        <section id="content">
-            <article id="info-box">
-                <img src="img1.jpg" alt="Tatuaje" id="float-right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            </article>
+    <main id="contenedor-principal">
+    <section id="zona-contenido">
+        <article class="bloque-info">
+            <img src="images/costillas.jpg" id="img-derecha" alt="Tattoo 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </article>
 
-            <article id="info-box">
-                <img src="img2.jpg" alt="Tatuaje" id="float-left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            </article>
-        </section>
+        <article class="bloque-info">
+            <img src="images/costillas.jpg" id="img-izquierda" alt="Tattoo 2">
+            <p>Tatuaje. El tatuaje en la cultura. Lorem ipsum dolor sit amet...</p>
+        </article>
+    </section>
 
-        <aside id="sidebar">
-            <a href="#"><img src="Float extra/images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="Float extra/images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="Float extra/images/you-tube.png" alt="YouTube"></a>
-        </aside>
+    <aside id="menu-lateral">
+    <a href="#"><img src="images/facebook.png" alt="f"></a>
+    <a href="#"><img src="images/instagram.png" alt="ig"></a>
+    <a href="#"><img src="images/you-tube.png" alt="yt"></a>
+    </aside>
     </main>
 
-    <footer id="footer">
-        <p>© 2025 Empresa de Tatuajes - Información legal</p>
+    <footer id="pie-pagina"> <p>Información de la empresa - 2025/2026</p>
     </footer>
 
 </body>
