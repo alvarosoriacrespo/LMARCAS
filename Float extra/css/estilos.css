@@ -33,12 +33,19 @@ body {
     color: white;
 }
 #capa-cookies {
-    background: white;
+    position: fixed;        
+    top: 50%;                
+    left: 50%;               
+    transform: translate(-50%, -50%); 
+    
+    width: 60%;              
+    background: white;      
     border: 2px solid red;
     padding: 20px;
-    width: 60%;
-    margin: 100px auto 20px auto;
     text-align: center;
+    
+    z-index: 2000;         
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5); 
 }
 
 
