@@ -9,7 +9,6 @@
 
 .hijo{
     border: 2px solid red;
-    width: 200px;
 }
 
 img{
@@ -18,5 +17,6 @@ img{
 }
 
 .menu{
-
+display:flex;
+justify-content: space-between;
 }
