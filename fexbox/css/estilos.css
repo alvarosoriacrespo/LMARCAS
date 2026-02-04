@@ -37,7 +37,7 @@ align-items: center;
 display: flex;
 gap: 10px;
 }
-.btn-primary {
+.boton1 {
 flex-grow: 2; 
 background: #3498db;
 color: white;
@@ -45,7 +45,7 @@ border: none;
 padding: 10px;
 border-radius: 5px;
 }
-.btn-secondary {
+.boton2{
 flex-grow: 1; 
 background: #ecf0f1;
 border: none;
