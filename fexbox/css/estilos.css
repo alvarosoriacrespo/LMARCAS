@@ -14,12 +14,17 @@ text-align: center;
 display: flex;
 align-items: center;
 gap: 15px;
+box-shadow: black;
 }
 .avatar {
 width: 50px;
 height: 50px;
 background: red;
 border-radius: 50%;
+}
+
+.user-inf{
+    box-shadow: black;
 }
 
 .padre {
