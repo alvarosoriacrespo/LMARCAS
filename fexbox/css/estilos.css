@@ -1,13 +1,54 @@
-.padre{
- border: 5px solid black;
- display:flex;
- /*flex-direction: column;*//*para que aparezca como una columna*/
- /*justify-content: space-evenly; *//*para crear un espaio entre contenidos*/
- /*height: 400px;*/
- /* align-items: center;*//*Alinea en el centro del recuadro padre a los hijos*/
-} 
-
-.hijo{
-    border: 2px solid red;
+.card {
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 300px;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+font-family: sans-serif;
 }
 
+.header {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.avatar {
+width: 50px;
+height: 50px;
+background: #3498db;
+border-radius: 50%;
+}
+
+.stats {
+display: flex;
+justify-content: space-around; 
+border-top: 1px solid #eee;
+padding-top: 15px;
+}
+.stat-item {
+display: flex;
+flex-direction: column; 
+align-items: center;
+}
+
+.actions {
+display: flex;
+gap: 10px;
+}
+.btn-primary {
+flex-grow: 2; 
+background: #3498db;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 5px;
+}
+.btn-secondary {
+flex-grow: 1; 
+background: #ecf0f1;
+border: none;
+padding: 10px;
+border-radius: 5px;
+}
