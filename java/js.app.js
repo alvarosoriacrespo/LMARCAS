@@ -5,4 +5,7 @@
 
 
       let nombre= "basilisco"
-      console.log("Te llamas:"+ nombre)
+      const curso= "ASIR"
+
+      console.log("Te llamas: " + nombre + " y cursas: " + curso)
+      
