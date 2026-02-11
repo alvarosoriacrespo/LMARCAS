@@ -1,31 +1,40 @@
-      console.log("Hola mundo")
-      console.log("Adios")
-      console.error("Error: no se puede conectar al servidor")
-      console.warn("OJO")
+      //console.log("Hola mundo")
+      //console.error("Error: no se puede conectar al servidor")
+      //console.warn("OJO")
 
 
-      let nombre= "Basilisco"
-      let /*const*/ curso= "ASIR" 
+      //let nombre= "Basilisco"
+      //let /*const*/ curso= "ASIR" 
       // const no se puede cambiar en un futuro, let puedo añadir mas
 
-      console.log("Te llamas: " + nombre + " y cursas: " + curso)
+      //console.log("Te llamas: " + nombre + " y cursas: " + curso)
 
-      nombre= "Julia"
-      curso = "DAW"
-      console.log("Te llamas: " + nombre + " y cursas: " + curso)
+      //nombre= "Julia"
+      //curso = "DAW"
+      //console.log("Te llamas: " + nombre + " y cursas: " + curso)
       
-      let edad = 19
+      // let edad = 19
 
-      if (edad > 17){
-        console.log ("Puede beber")
-      }
-      else{
-        if (edad > 12){
-            console.log("Puede beber cafe")
-      
-        }
-      else console.log("NO puede beber cafe")
+      //if (edad > 17){
+      //  console.log ("Puede beber")
+      //}
+      //else{
+      //  if (edad > 12){
+      //      console.log("Puede beber cafe")
+      //  }
+      //else console.log("NO puede beber cafe")
+      //}
+
+      // cadena = edad > 17 ? "Puede beber" : "No puede beber"
+      // console.log(cadena)
+
+
+      let num=0
+      while (num<=10){
+            num++
+            console.log(num)
       }
 
-      cadena = edad > 17 ? "Puede beber" : "No puede beber"
-      console.log(cadena)
+      for(num=1;num<10;num++){
+            console.log(num)
+      }
