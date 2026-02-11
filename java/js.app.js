@@ -13,3 +13,16 @@
       nombre= "Julia"
       curso = "DAW"
       console.log("Te llamas: " + nombre + " y cursas: " + curso)
+      
+      let edad = 1
+
+      if (edad > 17){
+        console.log ("Puede beber")
+      }
+      else{
+        if (edad > 12){
+            console.log("Puede beber cafe")
+      
+        }
+      else console.log("NO puede beber cafe")
+      }
