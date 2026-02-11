@@ -14,7 +14,7 @@
       curso = "DAW"
       console.log("Te llamas: " + nombre + " y cursas: " + curso)
       
-      let edad = 1
+      let edad = 19
 
       if (edad > 17){
         console.log ("Puede beber")
@@ -26,3 +26,6 @@
         }
       else console.log("NO puede beber cafe")
       }
+
+      cadena = edad > 17 ? "Puede beber" : "No puede beber"
+      console.log(cadena)
