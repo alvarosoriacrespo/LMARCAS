@@ -29,12 +29,12 @@
       // console.log(cadena)
 
 
-      let num=0
-      while (num<=10){
-            num++
-            console.log(num)
-      }
+      //let num=0
+      //while (num<=10){
+      //      num++
+      //      console.log(num)
+      //}
 
-      for(num=1;num<10;num++){
-            console.log(num)
-      }
+      //for(num=1;num<10;num++){
+      //      console.log(num)
+      //}
