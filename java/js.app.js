@@ -51,7 +51,7 @@
 let max=6
 let numero=Math.floor(Math.random
 () * max) + 1
-console.log(numero)
+console.log("Tu número es " + numero)
 
 
 //EJERCICIO PRIMITIVA
