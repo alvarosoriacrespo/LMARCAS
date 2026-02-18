@@ -48,10 +48,29 @@
       //}
 
 // EJERCICIO DADO
-let max=6
-let numero=Math.floor(Math.random
-() * max) + 1
-console.log("Tu número es " + numero)
+//let max=6
+//let numero=Math.floor(Math.random
+//() * max) + 1
+//console.log("Tu número es " + numero)
 
 
 //EJERCICIO PRIMITIVA
+
+function dameNumero(max){
+      let numero=Math.floor(Math.random
+      () * max) + 1
+      return numero
+}
+
+let veces=1
+let numeros =[]
+while(veces<=6) {
+      veces++
+      let variable=dameNumero(49)
+      let posicion=numeros.indexOf(variable)
+      if(posicion>-1){
+            console.log(variable + "ya estaba en la poscion: " + posicion)
+      }
+      else numeros.push(variable)
+}
+console.log(numeros)
