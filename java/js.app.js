@@ -1,3 +1,6 @@
+// BASICO
+
+
       //console.log("Hola mundo")
       //console.error("Error: no se puede conectar al servidor")
       //console.warn("OJO")
@@ -15,6 +18,9 @@
       
       // let edad = 19
 
+
+// IF y CADENAS
+
       //if (edad > 17){
       //  console.log ("Puede beber")
       //}
@@ -29,6 +35,8 @@
       // console.log(cadena)
 
 
+// BUCLES
+
       //let num=0
       //while (num<=10){
       //      num++
@@ -38,3 +46,12 @@
       //for(num=1;num<10;num++){
       //      console.log(num)
       //}
+
+// EJERCICIO DADO
+let max=6
+let numero=Math.floor(Math.random
+() * max) + 1
+console.log(numero)
+
+
+//EJERCICIO PRIMITIVA
