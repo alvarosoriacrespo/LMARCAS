@@ -47,7 +47,9 @@
       //      console.log(num)
       //}
 
+
 // EJERCICIO DADO
+
 //let max=6
 //let numero=Math.floor(Math.random
 //() * max) + 1
@@ -56,21 +58,32 @@
 
 //EJERCICIO PRIMITIVA
 
-function dameNumero(max){
-      let numero=Math.floor(Math.random
-      () * max) + 1
-      return numero
-}
+//function dameNumero(max){
+  //    let numero=Math.floor(Math.random
+  //    () * max) + 1
+  //    return numero
+//}
 
-let veces=1
-let numeros =[]
-while(veces<=6) {
-      veces++
-      let variable=dameNumero(49)
-      let posicion=numeros.indexOf(variable)
-      if(posicion>-1){
-            console.log(variable + "ya estaba en la poscion: " + posicion)
-      }
-      else numeros.push(variable)
+//let veces=1
+//let numeros =[]
+//while(veces<=6) {
+//      veces++
+//      let variable=dameNumero(49)
+//      let posicion=numeros.indexOf(variable)
+//      if(posicion>-1){
+//            console.log(variable + "ya estaba en la poscion: " + posicion)
+//      }
+//      else numeros.push(variable)
+//}
+//console.log(numeros)
+
+//EJERCICIO CIFRADO CESAR
+
+let letras=['abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ']
+let frase='casa'
+
+console.log(frase)
+for (let i=0;i<frase.length;(++){
+       console.log(frase[i])
 }
-console.log(numeros)
+)
