@@ -79,11 +79,14 @@
 
 //EJERCICIO CIFRADO CESAR
 
-let letras=['abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ']
-let frase='casa'
+let letras=["abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"]
+let frase="casa"
+let fraseArray=["c","a","s","a"]
 
-console.log(frase)
-for (let i=0;i<frase.length;(++){
-       console.log(frase[i])
+console.log(frase[0])
+console.log(frase[3])
+
+for (i=0;i<frase.length;i++{
+     console.log("Voy a buscar la letra: " + frase[i])
 }
 )
