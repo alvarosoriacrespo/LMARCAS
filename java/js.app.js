@@ -79,14 +79,34 @@
 
 //EJERCICIO CIFRADO CESAR
 
-let letras=["abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"]
-let frase="casa"
-let fraseArray=["c","a","s","a"]
+//let letras="abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+//let frase="almuerzo"
+//let paso=3
 
-console.log(frase[0])
-console.log(frase[3])
+//let nuevaFrase=""
+//for (i=0;i<frase.length;i++) {
+         //console.log("Voy a buscar la letra: " + frase[i])
+//     let posicion=letras.indexOf(frase[i])
+         //console.log ("Esta en la posicion " + posicion)
+//     let nuevaLetra=letras[posicion+paso]
+//     nuevaFrase=nuevaFrase+nuevaLetra
+//}
 
-for (i=0;i<frase.length;i++{
-     console.log("Voy a buscar la letra: " + frase[i])
+//console.log(frase + " es : " + nuevaFrase)
+
+//EJERCICIO CONTRASEÑA SEGURA
+
+let caracteres= "abcdefghijklmnopqrstuvwxyz"
+let Mayusculas= "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let Numeros= "0123456789"
+let Especiales= "!@#$%^&*()_+|~`-={}[]:;'<>?,./"
+
+function numeroAleatorio(min, max) {
+return Math.floor(Math.random() * (max - min + 1)) + min
 }
-)
+
+let num=numeroAleatorio(1,99)
+let letraespecial=Especiales[numeroAleatorio(0,30)]
+let password=num + letraespecial
+
+console.log("La contraseña es: " + password)
