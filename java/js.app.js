@@ -20,3 +20,8 @@
       
 //contenedor.innerText = "La contraseña es: " + password;
 
+let numero=document.getElementById("numero1")
+let numero2=document.getElementById("numero2")
+let solucion=document.getElementById("solucion")
+
+let run=document.getElementById("run")
