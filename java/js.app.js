@@ -95,6 +95,10 @@
 //console.log(frase + " es : " + nuevaFrase)
 
 //EJERCICIO CONTRASEÑA SEGURA
+// Buscamos el elemento por su ID
+
+const contenedor = document.getElementById('resultado');
+
 
 let caracteres= "abcdefghijklmnopqrstuvwxyz"
 let Mayusculas= "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -112,4 +116,4 @@ let mayu=Mayusculas[numeroAleatorio(1,26)]
 let password=letraespecial+num+caracter+mayu
       
 
-console.log("La contraseña es: " + password)
+contenedor.innerText = "La contraseña es: " + password;

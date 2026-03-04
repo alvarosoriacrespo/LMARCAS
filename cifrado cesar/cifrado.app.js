@@ -1,3 +1,6 @@
+
+const contenedor = document.getElementById('cifrado');
+
 let letras="abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 let frase="almuerzo"
 let paso=3
@@ -10,5 +13,4 @@ for (i=0;i<frase.length;i++) {
    let nuevaLetra=letras[posicion+paso]
     nuevaFrase=nuevaFrase+nuevaLetra
 }
-
-console.log(frase + " es : " + nuevaFrase)
+contenedor.innerText = frase + " es: " + nuevaFrase;
