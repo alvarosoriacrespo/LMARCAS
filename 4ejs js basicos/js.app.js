@@ -1,10 +1,44 @@
+//EJERCICIO DADO
+let max=6
+let numero1=Math.floor(Math.random() * max) + 1
+//console.log("Tu número es " + numero1)
 
+//EJERCICIO PRIMITIVA
 
+function dameNumero(max){
+    let numero=Math.floor(Math.random
+    () * max) + 1
+    return numero
+}
 
+let veces=1
+let numeros =[]
+while(veces<=6) {
+    veces ++
+    let variable=dameNumero(49)
+    let posicion=numeros.indexOf(variable)
+    if(posicion>-1){
+        //console.log(variable + "ya estaba en la posicion: " + posicion)
+    }
+    else numeros.push(variable)
+}
+//console.log(numeros)
 
+//EJERCICIO CIFRADO
 
+let letras="abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+let frase="almuerzo"
+let paso=3
 
-
+let nuevaFrase=""
+for (i=0;i<frase.length;i++) {
+        //console.log("Voy a buscar la letra: " + frase[i])
+    let posicion=letras.indexOf(frase[i])
+        //console.log ("Esta en la posicion " + posicion)
+   let nuevaLetra=letras[posicion+paso]
+    nuevaFrase=nuevaFrase+nuevaLetra
+}
+//console.log( frase + " será esta nueva: " + nuevaFrase)
 
 //EJERCICIO CONTRASEÑA SEGURA
 // Buscamos el elemento por su ID
