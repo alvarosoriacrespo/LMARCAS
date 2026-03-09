@@ -141,7 +141,8 @@ p {
 
 #textMain {
 /*
-  Punto 3: Para que la capa de la imagen y el float NO sigan la dinamica de la seccion anterior hay que romperla
+  Punto 3: Para que la capa de la imagen y el float NO sigan la dinamica de 
+  la seccion anterior hay que romperla
  */
 
   /* necesitas 1 instruccion*/
@@ -167,7 +168,8 @@ p {
 
 #cookieEU {
  /*
-  Punto 4: La capa esta posicionada casi al centro de la pantalla. Se diferencia del menu y del footer en que NO se queda fija al hacer scroll de la pagina.
+  Punto 4: La capa esta posicionada casi al centro de la pantalla. Se diferencia del menu 
+  y del footer en que NO se queda fija al hacer scroll de la pagina.
  */
 
   /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
@@ -188,7 +190,8 @@ p {
 
 #textOverflow {
  /*
-  Punto 5: La capa tiene una barra de scroll vertical para que podamos leer el texto que no cabe en el tamaño. Solo vertical, no horizontal
+  Punto 5: La capa tiene una barra de scroll vertical para que podamos leer el texto 
+  que no cabe en el tamaño. Solo vertical, no horizontal
  */
 
   /* necesitas 2 instruccion*/
