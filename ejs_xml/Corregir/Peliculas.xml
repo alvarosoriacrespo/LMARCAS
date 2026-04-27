@@ -9,5 +9,7 @@
   <director>Leo McCarey</director>
   <titulo>Sopa de ganso</titulo>
 </pelicula>
-<autor>barto</autor>
+<autores>
+  <autor>barto</autor>
+</autores>
 </cine>
