@@ -9,12 +9,12 @@
   
   <programa> 
     <nombre>OpenOffice.org </nombre> 
-    <licencia>LGPL</licencia> 
+    <licencias>LGPL</licencias> 
   </programa>
 
   <programa> 
     <nombre>Inkscape </nombre>
-    <licencia>GPL</licencia>
+    <licencias>GPL</licencias>
   </programa>
 
 </programas>
