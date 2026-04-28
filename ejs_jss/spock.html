@@ -173,17 +173,16 @@
 
 
     </div>
-    
     <script>
-        let tiempoPensar=5;
+        let tiempoPensar = 5;
         const opciones = ["piedra", "papel", "tijera", "lagarto", "spock"];
         const reglas = {
-                piedra: ["tijera", "lagarto"],
-                papel: ["piedra", "spock"],
-                tijera: ["papel", "lagarto"],
-                lagarto: ["spock", "papel"],
-                spock: ["tijera", "piedra"]
-            };
+            piedra: ["tijera", "lagarto"],
+            papel: ["piedra", "spock"],
+            tijera: ["papel", "lagarto"],
+            lagarto: ["spock", "papel"],
+            spock: ["tijera", "piedra"]
+        };
         const listaOpciones = document.getElementById("playerChoice");
         let jugadorEscoge;
         let ordenadorEscoge;
@@ -192,17 +191,13 @@
         const btnReiniciar = document.getElementById("btnReiniciar");
 
         listaOpciones.addEventListener("change", function() {
-            /*  ACABALO  */
-
-            /*  FIN ACABALO  */            
-
+            jugadorEscoge = this.value;
+            if (jugadorEscoge !== "") {
+                quienGana(jugadorEscoge, ordenadorEscoge);
+            }
         });
 
-        // decide quien gana
         function quienGana(jugador, ordenador) {
-            console.log("jugador: ", jugador, " ordenador: ", ordenador);
-
-            // Limpiar clases de veredicto previas
             resultadoEl.className = "resultado-veredicto";
 
             if (!jugador || !ordenador) {
@@ -234,7 +229,6 @@
             btnReiniciar.style.display = "block";
         }
 
-        // reinicia la partida
         function reiniciar() {
             jugadorEscoge = undefined;
             ordenadorEscoge = undefined;
@@ -248,18 +242,32 @@
             descuenta();
         }
 
-        //Promesa cuando pase el tiempo establecido el ordenador escoge
-        function descuenta(){
-            /*  ACABALO  */
+        function descuenta() {
+            const pOrdenador = document.getElementById("ordenadorElige");
 
-            /*  FIN ACABALO  */            
+            const cuentaAtras = new Promise((resolve) => {
+                let intervalo = setInterval(() => {
+                    tiempoPensar--;
+                    pOrdenador.textContent = `Ordenador Pensando elección (${tiempoPensar}s)...`;
 
+                    if (tiempoPensar <= 0) {
+                        clearInterval(intervalo);
+                        const randomIdx = Math.floor(Math.random() * opciones.length);
+                        resolve(opciones[randomIdx]);
+                    }
+                }, 1000);
+            });
+
+            cuentaAtras.then((eleccionFinal) => {
+                ordenadorEscoge = eleccionFinal;
+                pOrdenador.textContent = "¡El ordenador ya ha elegido!";
+                quienGana(jugadorEscoge, ordenadorEscoge);
+            });
         }
 
-        // el ordenador escoge tras pasar un tiempo
         descuenta();
-
     </script>
+    
 
 </body>
 </html>
