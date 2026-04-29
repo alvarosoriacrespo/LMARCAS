@@ -63,55 +63,53 @@
   </form>
 
   <script>
-    // URL de la API con tu clave (sustituye 'TU_API_KEY' por tu clave real)
-    const apiKey = 'TU_API_KEY';
+    const apiKey = '25314439b6ff845615662b9fae1e62e7';
     let titulo = document.getElementById('titulo');
-    let boton=document.getElementById('boton'); 
+    let boton = document.getElementById('boton'); 
     let inputCiudad = document.getElementById('city');
-    boton.addEventListener('click', function() {
-      event.preventDefault(); // Evita que el formulario se envíe
+
+    boton.addEventListener('click', function(event) {
+      event.preventDefault();
       obtenerClima();
     });
 
-    // Detectar la tecla Enter en el campo de texto
     inputCiudad.addEventListener('keydown', function(event) {
       if (event.key === 'Enter') {
-        event.preventDefault(); // Evita que el formulario se envíe
-        obtenerClima(); // Llama a la función obtenerClima()
+        event.preventDefault();
+        obtenerClima();
       }
     });
 
     function obtenerClima() {
       const ciudad = inputCiudad.value;
-      //const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},ES&units=metric&appid=${apiKey}`;
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&lang=es&units=metric&appid=${apiKey}`;
-      titulo.innerHTML="Clima actual " +  ciudad;
-      // Usamos fetch para obtener los datos del clima
+      titulo.innerHTML = "Clima actual en " + ciudad;
+
       fetch(url)
         .then(response => {
           if (!response.ok) {
-            throw new Error('Error al obtener los datos del clima: ' + response.statusText);
+            throw new Error('Ciudad no encontrada');
           }
           return response.json();
         })
         .then((data) => {
-          // Extraemos los datos relevantes
           const temperature = data.main.temp;
           const description = data.weather[0].description;
           const humidity = data.main.humidity;
 
-          // Mostramos los datos en el HTML
-          /*  ACABALO  */
-
-          /*  FIN ACABALO  */        
+          document.getElementById('weather').innerHTML = `
+            <p><strong>Temperatura:</strong> ${temperature}°C</p>
+            <p><strong>Descripción:</strong> ${description}</p>
+            <p><strong>Humedad:</strong> ${humidity}%</p>
+          `;
         })
         .catch(error => {
           console.error('Hubo un problema:', error);
-          document.getElementById('weather').textContent = `No se pudo obtener el clima.${error.message}`;
+          document.getElementById('weather').textContent = `No se pudo obtener el clima: ${error.message}`;
         });
     }
-    // Llamamos a la función para obtener el clima al cargar la página
-        obtenerClima();
+
+    obtenerClima();
   </script>
 </body>
 </html>
